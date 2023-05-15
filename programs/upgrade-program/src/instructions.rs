@@ -43,7 +43,6 @@ pub struct UpgradeArgs {
 #[derive(BorshSerialize, BorshDeserialize, Clone)]
 pub enum UpgradeInstruction {
     /// Initialize new UpgradeAdmin that will be an authority for target upgradable program.
-    /// Admin public key should be equal to PDA(seed, target_contract)
     ///
     /// Accounts expected by this instruction:
     ///
@@ -55,7 +54,6 @@ pub enum UpgradeInstruction {
 
     /// Change pubkey in UpgradeAdmin. The Keccak Hash of `[target_contract, nonce, "solana-upgrade-program".bytes, new_public_key]`
     /// should be signed by old public key to perform that operation.
-    /// Also, admin public key should be equal to PDA(seed, target_contract)
     ///
     /// Accounts expected by this instruction:
     ///
@@ -64,7 +62,6 @@ pub enum UpgradeInstruction {
 
     /// Change contract upgrade authority. The Keccak Hash of `[target_contract, nonce, "solana-upgrade-program".bytes, new_authority]`
     /// should be signed by stored public key to perform that operation.
-    /// Also, admin public key should be equal to PDA(seed, target_contract)
     ///
     /// Accounts expected by this instruction:
     ///
@@ -76,7 +73,6 @@ pub enum UpgradeInstruction {
 
     /// Upgrade contract. The Keccak Hash of `[target_contract, nonce, "solana-upgrade-program".bytes, buffer_address]`
     /// should be signed by stored public key to perform that operation.
-    /// Also, admin public key should be equal to PDA(seed, target_contract)
     ///
     /// Accounts expected by this instruction:
     ///
