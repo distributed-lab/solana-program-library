@@ -1,6 +1,7 @@
 # Upgrade program
 
-----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Crates.io](https://img.shields.io/crates/v/upgrade-program)](https://crates.io/crates/upgrade-prgram)
 
 Distributed Lab Solana upgrade program can be useful for managing program upgrades by ECDSA sekp256k1 signature 
 and also provides an example how to execute program upgrades by other programs.
