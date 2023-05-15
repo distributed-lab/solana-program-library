@@ -2,7 +2,11 @@ cargo-features = ["edition2021"]
 
 [package]
 name = "upgrade-program"
-version = "0.0.1"
+version = "1.0.0"
+description = "Distributed Lab - Solana Program Library"
+authors = ["Distributed Lab <contact@distributedlab.com>"]
+repository = "https://github.com/distributed-lab/solana-program-library"
+license = "MIT"
 edition = "2021"
 
 [features]
