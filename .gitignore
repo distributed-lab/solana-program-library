@@ -4,3 +4,4 @@
 /node_modules/
 /dist/program/
 /package-lock.json
+/vendor/
